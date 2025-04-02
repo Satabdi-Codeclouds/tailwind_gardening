@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header with Progress Indicator -->
+     
+    <header class="bg-white absolute inset-x-0 top-0 z-50 mb-5 bg-[url(/images/header-bg.jpg)] py-6 bg-center bg-cover">
+        <nav class="flex items-center justify-between p-2 lg:px-8 " aria-label="Global">
+            <div class="flex">
+                <a href="#" class="-m-1.5 p-1.5">
+                   
+                    <img class="w-auto" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div class="flex">
+                    <div class="info-box">
+                        <div class="text-box pr-6">
+                            <p><span class="text-white">Follow Us</span></p>
+                            <ul class="flex">
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Phone2"></i>
+                        </div>
+                        <div class="text-box pr-6">
+                            <p class="text-white"><span class="text-white">(123) 456 789</span> <br>contact@gardencare.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Timer"></i>
+                        </div>
+                        <div class="text-box">
+                            <p class="text-white"><span class="text-white">Mon - Sat 9.00 - 19.00</span> <br>Sunday Closed</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <a href="login.html" class="text-sm/6 font-semibold text-white ml-8">Log in <span
+                        aria-hidden="true">&rarr;</span></a>
+                    
+            </div>
+        </nav>
+
+        
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8 w-auto"
+                            src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-wrap bg-[url(/images/breadcrumb-bg.jpg)] bg-cover bg-center h-80 bg-fixed">
+        <div class="w-full mb-10">
+          <div class="container mx-auto h-full sm:pt-16 px-8">
+            <nav class="flex px-4 justify-between items-center">
+              <div class="text-4xl font-bold">
+                Plant<span class="text-green-700">.</span>
+              </div>
+              <div>
+                <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
+              </div>
+            </nav>
+            <div class="hidden lg:flex  lg:gap-x-10 justify-center pl-8 bg-[linear-gradient(to_bottom,_#ffffff_0%,_#fafafa_19%,_#e2e2e2_69%,_#d7d7d7_100%)] py-4">
+                <a href="index.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Home <span class="px-3">|</span></a>
+                <a href="about.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">About us <span class="px-3">|</span></a>
+              
+                <a href="service.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Service <span class="px-3">|</span></a>
+                <a href="shop.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Shop <span class="px-3">|</span></a>
+                <a href="blog.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Blog <span class="px-3">|</span></a>
+                <a href="contactus.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Contact us </a>
+            </div>
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-full">
+                <div class="col-lg-12">
+					<div class="breadcrumb-title">
+                    	<h1 class="text-center uppercase font-semibold text-white text-2xl font-['Roboto_Slab',_serif] ">cart</h1>
+                        <div class="flex justify-center mt-4">
+						<a href="index.html" class="text-white font-['Open_Sans',_sans-serif] pr-2">Home</a> <i class="fa fa-angle-right text-white mt-1"></i> <span class="text-white font-['Open_Sans',_sans-serif] pl-2">Cart</span>
+                    </div>
+					</div> <!-- /.page-breadcumb -->
+				</div>
+               
+              </div>
+            </header>
+          </div>
+        </div>
+       
+      </div>
+
+
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+            <div class="flex items-center justify-between">
+                <!-- <a href="#" class="text-2xl font-bold">NIKE</a> -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center">1</div>
+                        <div class="ml-2">Cart</div>
+                        <div class="w-16 h-1 bg-black mx-2"></div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center">2</div>
+                        <div class="ml-2 font-semibold">Checkout</div>
+                        <div class="w-16 h-1 bg-gray-300 mx-2"></div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center">3
+                        </div>
+                        <div class="ml-2">Confirmation</div>
+                    </div>
+                </div>
+                <div class="text-sm text-gray-600">Need help? 1-800-806-6453</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Checkout Form -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Delivery Options -->
+                <section class="bg-white p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-semibold mb-4 font-['Roboto_Slab',_serif]">Delivery Method</h2>
+                    <div class="space-y-4">
+                        <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-black">
+                            <input type="radio" name="delivery" class="form-radio text-black" checked>
+                            <div class="ml-4">
+                                <div class="font-semibold font-['Roboto_Slab',_serif]">Standard Delivery</div>
+                                <div class="text-sm text-gray-600">Free • 3-5 business days</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:border-black">
+                            <input type="radio" name="delivery" class="form-radio text-black">
+                            <div class="ml-4">
+                                <div class="font-semibold font-['Roboto_Slab',_serif]">Express Delivery</div>
+                                <div class="text-sm text-gray-600">$12.99 • 1-2 business days</div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <!-- Shipping Address -->
+                <section class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-semibold font-['Roboto_Slab',_serif]">Shipping Address</h2>
+                        <button class="text-sm text-gray-600 hover:text-black">
+                            <i class="far fa-address-book mr-1"></i> Use saved address
+                        </button>
+                    </div>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Street Address</label>
+                            <input type="text"
+                                class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                placeholder="123 Main St">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Apartment, suite, etc.
+                                (optional)</label>
+                            <input type="text"
+                                class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                placeholder="Apt 4B">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="New York">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">State</label>
+                                <select
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none">
+                                    <option>Select State</option>
+                                    <option>NY</option>
+                                    <option>CA</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">ZIP Code</label>
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="10001">
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Payment Method -->
+                <section class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-semibold font-['Roboto_Slab',_serif]">Payment Method</h2>
+                        <div class="flex space-x-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa"
+                                class="h-6">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                                alt="Mastercard" class="h-6">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/2052px-American_Express_logo_%282018%29.svg.png"
+                                alt="Amex" class="h-6">
+                        </div>
+                    </div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                            <div class="relative">
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="1234 5678 9012 3456">
+                                <i class="fas fa-lock absolute right-3 top-3 text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Expiration Date</label>
+                                <input type="text"
+                                    class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                    placeholder="MM/YY">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Security Code</label>
+                                <div class="relative">
+                                    <input type="text"
+                                        class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+                                        placeholder="CVV">
+                                    <button class="absolute right-3 top-3 text-gray-400"
+                                        title="Your card's 3-digit security code">
+                                        <i class="fas fa-question-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-black">
+                                <span class="ml-2 text-sm text-gray-600">Save this card for future purchases</span>
+                            </label>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-lg shadow-sm sticky top-4">
+                    <h2 class="text-xl font-semibold mb-4 font-['Roboto_Slab',_serif]">Order Summary</h2>
+
+                    <!-- Product -->
+                    <div class="flex items-start space-x-4 mb-4 pb-4 border-b">
+                        <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Nike Air Max 2024" class="w-20 h-20 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="font-medium">Nike Air Max 2024</h3>
+                            <p class="text-sm text-gray-600">Size: US 10</p>
+                            <p class="text-sm text-gray-600">Quantity: 1</p>
+                            <p class="font-medium mt-1">$179.99</p>
+                        </div>
+                    </div>
+
+                   
+
+                    <!-- Cost Breakdown -->
+                    <div class="space-y-2 mb-4 pb-4 border-b">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Subtotal</span>
+                            <span>$179.99</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Shipping</span>
+                            <span class="text-green-600">Free</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Tax</span>
+                            <span>$16.20</span>
+                        </div>
+                    </div>
+
+                    <!-- Total -->
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-lg font-semibold">Total</span>
+                        <span class="text-lg font-semibold">$196.19</span>
+                    </div>
+
+                    <!-- Place Order Button -->
+                    <button
+                        class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm w-full">
+                        <span>Place Order</span>
+                        <i class="fas fa-lock ml-2"></i>
+                    </button>
+
+                    <!-- Additional Info -->
+                    <div class="mt-4 text-sm text-gray-600 text-center">
+                        <p>By placing your order, you agree to our</p>
+                        <p><a href="#" class="underline">Terms of Service</a> and <a href="#" class="underline">Privacy
+                                Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Trust Signals -->
+    <section class="max-w-5xl mx-auto px-4 py-8 border-t">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <i class="fas fa-lock text-2xl mb-2"></i>
+                <h3 class="font-semibold">Secure Payment</h3>
+                <p class="text-sm text-gray-600">Your data is protected by 256-bit SSL encryption</p>
+            </div>
+            <div>
+                <i class="fas fa-undo text-2xl mb-2"></i>
+                <h3 class="font-semibold">Free Returns</h3>
+                <p class="text-sm text-gray-600">60-day return policy for any reason</p>
+            </div>
+            <div>
+                <i class="fas fa-headset text-2xl mb-2"></i>
+                <h3 class="font-semibold">24/7 Support</h3>
+                <p class="text-sm text-gray-600">Our team is here to help anytime</p>
+            </div>
+        </div>
+    </section>
+    <section id="footer-bg">
+        <!-- footer -->
+        <footer class="gardener">
+            <div class="py-8 px-8">
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna ali qua. Ut enim.</p>
+
+
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">Our Services</h3>
+                        <ul class="quick-links">
+                            <li><a href="product-details.html">Lawn Renovation</a></li>
+                            <li><a href="product-details.html">Flowerscaping</a></li>
+                            <li><a href="product-details.html">Natural Stone Walks</a></li>
+                            <li><a href="product-details.html">Tree &amp; Shrub Care</a></li>
+                            <li><a href="product-details.html">Seasonal Clean-ups</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">Get in Touch</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-location-dot text-[product-details.html98BC24]"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Lorance Road 542B, Tailstoi Town<br>5248 MT, Wordwide Country</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="content phone">
+                                    <p>01865 524 8503</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <p>contact@gardencare.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-6 hidden-md col-sm-6 col-xs-12 widget">
+                        <img class="positioned wow slideInRight" src="images/footer-man.png" alt=""
+                            style="visibility: visible; animation-name: slideInRight;">
+                    </div> <!-- /.widget -->
+                </div>
+            </div>
+        </footer> <!-- /footer -->
+
+        <!-- product-details.htmlbottom-bar -->
+        <section id="bottom-bar" class="gardener">
+            <div class="px-8">
+                <div class="grid grid-cols-2 gap-4 place-content-center">
+                    <!-- .copyright -->
+                    <div class="py-5">
+                        <ul class="social">
+                            <li><a href="product-details.html"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <p>Created by: DesignArc</p>
+                    </div> <!-- /.copyright -->
+                    <!-- .credit -->
+                    <div class="credit text-right py-5">
+                        <p>Copyright © Garden Care 2015. All rights reserved. </p>
+                    </div> <!-- /.credit -->
+                </div>
+            </div>
+        </section><!-- /product-details.htmlbottom-bar -->
+    </section>
+</body>
+
+</html>

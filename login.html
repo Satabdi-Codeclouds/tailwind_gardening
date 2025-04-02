@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        
+    <link href="css/style.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-screen bg-[#7FA409]">
+        <div class="w-96 p-6 bg-white rounded-md">
+            <h1 class="text-3xl text-center font-semibold block text-gray-500 font-['Roboto_Slab',_serif]"><i class="fa-solid fa-user text-2xl text-gray-500"></i> log in</h1>
+            <hr class="mt-3">
+            <div class="mt-3">
+                <label for="username" class="block text-base mb-1 text-gray-500 font-medium">Username:</label>
+                <input type="text" id="username"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+                    placeholder="Enter UserName...." />
+            </div>
+            <div class="mt-3">
+                <label for="password" class="block text-base mb-1 text-gray-500 font-medium">Password:</label>
+                <input type="text" id="password"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+                    placeholder="Enter Password...." />
+            </div>
+
+            <div class="flex justify-between items-center">
+                <div class="mt-3">
+                    <input type="checkbox" />
+                    <label class="text-gray-500 font-medium">Remember Me</label>
+                    
+                </div>
+                <div class="mt-3">
+                <a href="#" class="font-semibold text-[#98BC24]">Forgot Password</a>
+            </div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <button type="submit" class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm w-80">Login</button>
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+
+</html>

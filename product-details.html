@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Product Details</title>
+</head>
+
+<body class="bg-light">
+    <header class="bg-white absolute inset-x-0 top-0 z-50 mb-5 bg-[url(/images/header-bg.jpg)] py-6 bg-center bg-cover">
+        <nav class="flex items-center justify-between p-2 lg:px-8 " aria-label="Global">
+            <div class="flex">
+                <a href="#" class="-m-1.5 p-1.5">
+                   
+                    <img class="w-auto" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div class="flex">
+                    <div class="info-box">
+                        <div class="text-box pr-6">
+                            <p><span class="text-white">Follow Us</span></p>
+                            <ul class="flex">
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Phone2"></i>
+                        </div>
+                        <div class="text-box pr-6">
+                            <p class="text-white"><span class="text-white">(123) 456 789</span> <br>contact@gardencare.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Timer"></i>
+                        </div>
+                        <div class="text-box">
+                            <p class="text-white"><span class="text-white">Mon - Sat 9.00 - 19.00</span> <br>Sunday Closed</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <a href="login.html" class="text-sm/6 font-semibold text-white ml-8">Log in <span
+                        aria-hidden="true">&rarr;</span></a>
+                    
+            </div>
+        </nav>
+
+        
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8 w-auto"
+                            src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-wrap bg-[url(/images/breadcrumb-bg.jpg)] bg-cover bg-center h-80 bg-fixed">
+        <div class="w-full mb-10">
+          <div class="container mx-auto h-full sm:pt-16 px-8">
+            <nav class="flex px-4 justify-between items-center">
+              <div class="text-4xl font-bold">
+                Plant<span class="text-green-700">.</span>
+              </div>
+              <div>
+                <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
+              </div>
+            </nav>
+            <div class="hidden lg:flex  lg:gap-x-10 justify-center pl-8 bg-[linear-gradient(to_bottom,_#ffffff_0%,_#fafafa_19%,_#e2e2e2_69%,_#d7d7d7_100%)] py-4">
+                <a href="index.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Home <span class="px-3">|</span></a>
+                <a href="about.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">About us <span class="px-3">|</span></a>
+              
+                <a href="service.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Service <span class="px-3">|</span></a>
+                <a href="shop.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Shop <span class="px-3">|</span></a>
+                <a href="blog.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Blog <span class="px-3">|</span></a>
+                <a href="contactus.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Contact us </a>
+            </div>
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-full">
+                <div class="col-lg-12">
+					<div class="breadcrumb-title">
+                    	<h1 class="text-center uppercase font-semibold text-white text-2xl font-['Roboto_Slab',_serif] ">Shop Details</h1>
+                        <div class="flex justify-center mt-4">
+						<a href="index.html" class="text-white font-['Open_Sans',_sans-serif] pr-2">Home</a> <i class="fa fa-angle-right text-white mt-1"></i> <span class="text-white font-['Open_Sans',_sans-serif] pl-2">Shop Details</span>
+                    </div>
+					</div> <!-- /.page-breadcumb -->
+				</div>
+               
+              </div>
+            </header>
+          </div>
+        </div>
+       
+      </div>
+<div class="bg-white">
+    <div class="pt-6">
+      <nav aria-label="Breadcrumb">
+        <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <li>
+            <div class="flex items-center">
+              <a href="#" class="mr-2 text-sm font-medium text-gray-900">Men</a>
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <a href="#" class="mr-2 text-sm font-medium text-gray-900">Clothing</a>
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+              </svg>
+            </div>
+          </li>
+  
+          <li class="text-sm">
+            <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600 font-['Roboto_Slab',_serif]">Basic Tee 6-Pack</a>
+          </li>
+        </ol>
+      </nav>
+  
+      <!-- Image gallery -->
+      <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+        <img src="images/1.jpg" alt="Two each of gray, white, and black shirts laying flat." class="hidden size-full rounded-lg object-cover lg:block">
+        
+        <div class="mt-4 lg:row-span-3 lg:mt-0 lg:border-l lg:border-gray-200 pl-5">
+          <h2 class="sr-only">Product information</h2>
+          <p class="text-3xl tracking-tight text-[#98bc24] font-bold ">$192</p>
+  
+          <!-- Reviews -->
+          <div class="mt-6">
+            <h3 class="sr-only">Reviews</h3>
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <!-- Active: "text-gray-900", Default: "text-gray-200" -->
+                <svg class="size-5 shrink-0 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                </svg>
+                <svg class="size-5 shrink-0 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                </svg>
+                <svg class="size-5 shrink-0 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                </svg>
+                <svg class="size-5 shrink-0 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                </svg>
+                <svg class="size-5 shrink-0 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <p class="sr-only">4 out of 5 stars</p>
+              <a href="#" class="ml-3 text-sm font-medium text-[#79a000] hover:text-indigo-500">117 reviews</a>
+            </div>
+          </div>
+  
+          <form class="mt-10">
+            <!-- Colors -->
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Color</h3>
+  
+              <fieldset aria-label="Choose a color" class="mt-4">
+                <div class="flex items-center gap-x-3">
+                  <!-- Active and Checked: "ring-3 ring-offset-1" -->
+                  <label aria-label="White" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-hidden">
+                    <input type="radio" name="color-choice" value="White" class="sr-only">
+                    <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-white"></span>
+                  </label>
+                  <!-- Active and Checked: "ring-3 ring-offset-1" -->
+                  <label aria-label="Gray" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-hidden">
+                    <input type="radio" name="color-choice" value="Gray" class="sr-only">
+                    <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-gray-200"></span>
+                  </label>
+                  <!-- Active and Checked: "ring-3 ring-offset-1" -->
+                  <label aria-label="Black" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-900 focus:outline-hidden">
+                    <input type="radio" name="color-choice" value="Black" class="sr-only">
+                    <span aria-hidden="true" class="size-8 rounded-full border border-black/10 bg-gray-900"></span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+  
+            <!-- Sizes -->
+            <div class="mt-10">
+              <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-900">Size</h3>
+                <a href="#" class="text-sm font-medium text-[#79a000] hover:text-indigo-500">Size guide</a>
+              </div>
+  
+              <fieldset aria-label="Choose a size" class="mt-4">
+                <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-not-allowed items-center justify-center rounded-md border bg-gray-50 px-4 py-3 text-sm font-medium text-gray-200 uppercase hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XXS" disabled class="sr-only">
+                    <span>XXS</span>
+                    <span aria-hidden="true" class="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200">
+                      <svg class="absolute inset-0 size-full stroke-2 text-gray-200" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="currentColor">
+                        <line x1="0" y1="100" x2="100" y2="0" vector-effect="non-scaling-stroke" />
+                      </svg>
+                    </span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XS" class="sr-only">
+                    <span>XS</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="S" class="sr-only">
+                    <span>S</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="M" class="sr-only">
+                    <span>M</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="L" class="sr-only">
+                    <span>L</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XL" class="sr-only">
+                    <span>XL</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="2XL" class="sr-only">
+                    <span>2XL</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium text-gray-900 uppercase shadow-xs hover:bg-gray-50 focus:outline-hidden sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="3XL" class="sr-only">
+                    <span>3XL</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+  
+            <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-[#98bc24] px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add to bag</button>
+          </form>
+        </div>
+
+        <div class="hidden lg:grid lg:grid-cols-2 w-48 h-48 lg:gap-y-4 gap-4 pro-sec">
+          <img src="images/3.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        <img src="images/6.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        <img src="images/4.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        <img src="images/6.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        <img src="images/3.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        <img src="images/3.jpg" alt="Model wearing plain black basic tee." class=" rounded-lg w-24 h-24">
+          <div class="w-80 pt-5">
+         <h4 class="w-100 font-['Roboto_Slab',_serif]">Finger Bandage Applicator</h4>
+         <h6 class="pt-2 font-['Roboto_Slab',_serif] font-medium">$9.95</h6>
+        </div>
+        </div>
+        
+      </div>
+  
+      <!-- Product info -->
+      <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+        <div class="lg:col-span-2  lg:pr-8">
+          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl font-['Roboto_Slab',_serif]">Basic Tee 6-Pack</h1>
+        </div>
+  
+        <!-- Options -->
+       
+  
+        <div class="py-10 lg:col-span-2 lg:col-start-1 lg:pt-6 lg:pr-8 lg:pb-16">
+          <!-- Description and details -->
+          <div>
+            <h3 class="sr-only">Description</h3>
+  
+            <div class="space-y-6">
+              <p class="text-base text-gray-900">The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: &quot;Black&quot;. Need to add an extra pop of color to your outfit? Our white tee has you covered.</p>
+            </div>
+          </div>
+  
+          <div class="mt-10">
+            <h3 class="text-sm font-medium text-gray-900 font-['Roboto_Slab',_serif]">Highlights</h3>
+  
+            <div class="mt-4">
+              <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                <li class="text-gray-400"><span class="text-gray-600">Hand cut and sewn locally</span></li>
+                <li class="text-gray-400"><span class="text-gray-600">Dyed with our proprietary colors</span></li>
+                <li class="text-gray-400"><span class="text-gray-600">Pre-washed &amp; pre-shrunk</span></li>
+                <li class="text-gray-400"><span class="text-gray-600">Ultra-soft 100% cotton</span></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="mt-10">
+            <h2 class="text-sm font-medium text-gray-900 font-['Roboto_Slab',_serif]">Details</h2>
+  
+            <div class="mt-4 space-y-6">
+              <p class="text-sm text-gray-600">The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming &quot;Charcoal Gray&quot; limited release.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="footer-bg">
+      <!-- footer -->
+      <footer class="gardener">
+        <div class="py-8 px-8">
+          <div class="grid grid-cols-4 gap-4">
+            <!-- .widget -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+              <h3 class="text-white italic text-lg font-semibold mb-5">About Us</h3>
+              <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim.</p>
+            
+              
+            </div> <!-- /.widget -->
+            <!-- .widget -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+              <h3 class="text-white italic text-lg font-semibold mb-5">Our Services</h3>
+              <ul class="quick-links">
+                <li><a href="#">Lawn Renovation</a></li>
+                <li><a href="#">Flowerscaping</a></li>
+                <li><a href="#">Natural Stone Walks</a></li>
+                <li><a href="#">Tree &amp; Shrub Care</a></li>
+                <li><a href="#">Seasonal Clean-ups</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+            <!-- .widget -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+              <h3 class="text-white italic text-lg font-semibold mb-5">Get in Touch</h3>
+              <ul class="contact-info">
+                <li>
+                  <div class="icon-box">
+                    <i class="fa-solid fa-location-dot text-[#98BC24]"></i>
+                  </div>
+                  <div class="content">
+                    <p>Lorance Road 542B, Tailstoi Town<br>5248 MT, Wordwide Country</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-box">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="content phone">
+                    <p>01865 524 8503</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-box">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <p>contact@gardencare.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div> <!-- /.widget -->
+            <!-- .widget -->
+            <div class="col-lg-3 col-md-6 hidden-md col-sm-6 col-xs-12 widget">
+              <img class="positioned wow slideInRight" src="images/footer-man.png" alt="" style="visibility: visible; animation-name: slideInRight;">
+            </div> <!-- /.widget -->
+          </div>
+        </div>
+      </footer> <!-- /footer -->
+      
+      <!-- #bottom-bar -->
+      <section id="bottom-bar" class="gardener">
+        <div class="px-8">
+          <div class="grid grid-cols-2 gap-4 place-content-center">
+            <!-- .copyright -->
+            <div class="py-5">
+              <ul class="social">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              </ul>
+              <p>Created by: DesignArc</p>
+            </div> <!-- /.copyright -->
+            <!-- .credit -->
+            <div class="credit text-right py-5">
+              <p>Copyright © Garden Care 2015. All rights reserved. </p>
+            </div> <!-- /.credit -->
+          </div>
+        </div> 
+      </section><!-- /#bottom-bar -->
+      </section>
+  </div>
+  </body>
+  </html>
+
+  

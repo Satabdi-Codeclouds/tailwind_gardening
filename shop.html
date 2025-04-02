@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Shop</title>
+</head>
+
+<body class="bg-light">
+    <header class="bg-white absolute inset-x-0 top-0 z-50 mb-5 bg-[url(/images/header-bg.jpg)] py-6 bg-center bg-cover">
+        <nav class="flex items-center justify-between p-2 lg:px-8 " aria-label="Global">
+            <div class="flex">
+                <a href="product-details.html" class="-m-1.5 p-1.5">
+
+                    <img class="w-auto" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div class="flex">
+                    <div class="info-box">
+                        <div class="text-box pr-6">
+                            <p><span class="text-white">Follow Us</span></p>
+                            <ul class="flex">
+                                <li class="pr-2 text-white"><a href="product-details.html"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="pr-2 text-white"><a href="product-details.html"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="pr-2 text-white"><a href="product-details.html"><i class="fa-brands fa-google-plus-g"></i></a>
+                                </li>
+                                <li class="pr-2 text-white"><a href="product-details.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Phone2"></i>
+                        </div>
+                        <div class="text-box pr-6">
+                            <p class="text-white"><span class="text-white">(123) 456 789</span>
+                                <br>contact@gardencare.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Timer"></i>
+                        </div>
+                        <div class="text-box">
+                            <p class="text-white"><span class="text-white">Mon - Sat 9.00 - 19.00</span> <br>Sunday
+                                Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="login.html" class="text-sm/6 font-semibold text-white ml-8">Log in <span
+                        aria-hidden="true">&rarr;</span></a>
+
+            </div>
+        </nav>
+
+
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="product-details.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8 w-auto"
+                            src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="product-details.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                            <a href="product-details.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                            <a href="product-details.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                            <a href="product-details.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="product-details.html"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-wrap bg-[url(/images/breadcrumb-bg.jpg)] bg-cover bg-center h-80 bg-fixed">
+        <div class="w-full mb-10">
+            <div class="container mx-auto h-full sm:pt-16 px-8">
+                <nav class="flex px-4 justify-between items-center">
+                    <div class="text-4xl font-bold">
+                        Plant<span class="text-green-700">.</span>
+                    </div>
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
+                    </div>
+                </nav>
+                <div
+                    class="hidden lg:flex  lg:gap-x-10 justify-center pl-8 bg-[linear-gradient(to_bottom,_product-details.htmlffffff_0%,_product-details.htmlfafafa_19%,_product-details.htmle2e2e2_69%,_product-details.htmld7d7d7_100%)] py-4">
+                    <a href="index.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Home <span
+                            class="px-3">|</span></a>
+                    <a href="about.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">About us <span
+                            class="px-3">|</span></a>
+
+                    <a href="service.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Service <span
+                            class="px-3">|</span></a>
+                    <a href="shop.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Shop <span
+                            class="px-3">|</span></a>
+                    <a href="blog.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Blog <span
+                            class="px-3">|</span></a>
+                    <a href="contactus.html"
+                        class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Contact us
+                    </a>
+                </div>
+                <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+                    <div class="w-full">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-title">
+                                <h1
+                                    class="text-center uppercase font-semibold text-white text-2xl font-['Roboto_Slab',_serif] ">
+                                    Shop</h1>
+                                <div class="flex justify-center mt-4">
+                                    <a href="index.html" class="text-white font-['Open_Sans',_sans-serif] pr-2">Home</a>
+                                    <i class="fa fa-angle-right text-white mt-1"></i> <span
+                                        class="text-white font-['Open_Sans',_sans-serif] pl-2">Shop</span>
+                                </div>
+                            </div> <!-- /.page-breadcumb -->
+                        </div>
+
+                    </div>
+                </header>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="py-8 w-full">
+        <div class="px-8 py-8">
+            <div class="section-title2 mb-8">
+            	<p class="font-['PT_Serif',_serif] italic font-medium capitalize text-gray-500 text-lg ">We offier differnt services</p>
+				<h1 class="font-bold text-2xl text-dark font-['Roboto_Slab',_serif] uppercase mr-2 relative"><span class="pr-2">our Best Seller</span></h1>
+			</div>
+            
+            <div class="w-fit grid lg:grid-cols-4 md:grid-cols-4 justify-items-center justify-center gap-y-10 gap-x-14 mt-10 mb-5">
+               
+                <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-1.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-2.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-3.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-4.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+
+
+
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-1.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-2.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-3.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+                  <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <a href="product-details.html">
+                      <img src="images/shop-item-4.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                      <div class="px-4 py-3 w-72">
+                       
+                        <p class="text-lg font-bold text-black truncate block capitalize font-['Roboto_Slab',_serif]">Grass Trimmer</p>
+                        <div class="star-rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <input type="hidden" name="whatever" class="rating-value" value="3">
+                        </div>
+                        <div class="flex items-center">
+                          <p class="text-lg font-semibold text-black cursor-auto my-3 font-['Roboto_Slab',_serif]">$149</p>
+                          <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2 font-['Roboto_Slab',_serif]">$199</p>
+                          </del>
+                          <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div> 
+            </div>
+           
+              
+        </div>
+    </section>
+
+
+
+    <section id="footer-bg">
+        <!-- footer -->
+        <footer class="gardener">
+            <div class="py-8 px-8">
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna ali qua. Ut enim.</p>
+
+
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">Our Services</h3>
+                        <ul class="quick-links">
+                            <li><a href="product-details.html">Lawn Renovation</a></li>
+                            <li><a href="product-details.html">Flowerscaping</a></li>
+                            <li><a href="product-details.html">Natural Stone Walks</a></li>
+                            <li><a href="product-details.html">Tree &amp; Shrub Care</a></li>
+                            <li><a href="product-details.html">Seasonal Clean-ups</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+                        <h3 class="text-white italic text-lg font-semibold mb-5">Get in Touch</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-location-dot text-[product-details.html98BC24]"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Lorance Road 542B, Tailstoi Town<br>5248 MT, Wordwide Country</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="content phone">
+                                    <p>01865 524 8503</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <p>contact@gardencare.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                    <!-- .widget -->
+                    <div class="col-lg-3 col-md-6 hidden-md col-sm-6 col-xs-12 widget">
+                        <img class="positioned wow slideInRight" src="images/footer-man.png" alt=""
+                            style="visibility: visible; animation-name: slideInRight;">
+                    </div> <!-- /.widget -->
+                </div>
+            </div>
+        </footer> <!-- /footer -->
+
+        <!-- product-details.htmlbottom-bar -->
+        <section id="bottom-bar" class="gardener">
+            <div class="px-8">
+                <div class="grid grid-cols-2 gap-4 place-content-center">
+                    <!-- .copyright -->
+                    <div class="py-5">
+                        <ul class="social">
+                            <li><a href="product-details.html"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="product-details.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <p>Created by: DesignArc</p>
+                    </div> <!-- /.copyright -->
+                    <!-- .credit -->
+                    <div class="credit text-right py-5">
+                        <p>Copyright © Garden Care 2015. All rights reserved. </p>
+                    </div> <!-- /.credit -->
+                </div>
+            </div>
+        </section><!-- /product-details.htmlbottom-bar -->
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+
+
+    <header class="bg-white absolute inset-x-0 top-0 z-50 mb-5 bg-[url(/images/header-bg.jpg)] py-6 bg-center bg-cover">
+        <nav class="flex items-center justify-between p-2 lg:px-8 " aria-label="Global">
+            <div class="flex">
+                <a href="#" class="-m-1.5 p-1.5">
+                   
+                    <img class="w-auto" src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div class="flex">
+                    <div class="info-box">
+                        <div class="text-box pr-6">
+                            <p><span class="text-white">Follow Us</span></p>
+                            <ul class="flex">
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li class="pr-2 text-white"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Phone2"></i>
+                        </div>
+                        <div class="text-box pr-6">
+                            <p class="text-white"><span class="text-white">(123) 456 789</span> <br>contact@gardencare.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-box">
+                            <i class="icon icon-Timer"></i>
+                        </div>
+                        <div class="text-box">
+                            <p class="text-white"><span class="text-white">Mon - Sat 9.00 - 19.00</span> <br>Sunday Closed</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <a href="login.html" class="text-sm/6 font-semibold text-white ml-8">Log in <span
+                        aria-hidden="true">&rarr;</span></a>
+                    
+            </div>
+        </nav>
+
+        
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8 w-auto"
+                            src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-wrap bg-[url(/images/home6-slider1.jpg)] bg-cover bg-center h-screen bg-fixed">
+        <div class="w-full mb-10">
+          <div class="container mx-auto h-full sm:pt-16 px-8">
+            <nav class="flex px-4 justify-between items-center">
+              <div class="text-4xl font-bold">
+                Plant<span class="text-green-700">.</span>
+              </div>
+              <div>
+                <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8">
+              </div>
+            </nav>
+            <div class="hidden lg:flex  lg:gap-x-10 justify-center pl-8 bg-[linear-gradient(to_bottom,_#ffffff_0%,_#fafafa_19%,_#e2e2e2_69%,_#d7d7d7_100%)] py-4">
+                <a href="index.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Home <span class="px-3">|</span></a>
+                <a href="about.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">About us <span class="px-3">|</span></a>
+              
+                <a href="service.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Service <span class="px-3">|</span></a>
+                <a href="shop.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Shop <span class="px-3">|</span></a>
+                <a href="blog.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Blog <span class="px-3">|</span></a>
+                <a href="contactus.html" class="text-base uppercase font-semibold text-black font-['Roboto_Slab',_serif] ">Contact us </a>
+            </div>
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-2/3">
+                <h1 class="text-5xl lg:text-6xl font-bold uppercase pb-3 bg-[#7FA409] px-5 py-3 text-white font-['PT_Serif',_serif]">Nature Meets  <span class="text-white">greeny</span></h1>
+                <h2 class="font-['PT_Serif',_serif] font-bold py-3 px-3 tracking-[.25em] uppercase text-4xl text-green-900 bg-[#E8E8E6]">Elevate Your Greenery</h2>
+                <div class="w-20 h-1 bg-[#98BC24] my-4"></div>
+                <p class="text-base mb-5 font-medium text-white">Bring life to your home and garden with beautifully crafted plant accessories that may enhance your green space effortlessly.</p>
+                <a href="#" class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm">Shop Now <i class="fa fa-arrow-circle-right pl-3"></i></a>
+              </div>
+            </header>
+          </div>
+        </div>
+       
+      </div>
+
+<div class="flex items-center bg-[#98BC24] py-8 px-8 justify-between">
+ 
+        <h5 class="text-center text-white text-3xl font-medium italic font-['PT_Serif',_serif]">Check out our list of service for your garden and get free quote </h5>
+        <a href="#" class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm">Shop Now <i class="fa fa-arrow-circle-right pl-3"></i></a>
+       
+      </div>
+
+      <section class="py-24 relative" id="about">
+        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
+                <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
+                    <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+                        <h1 class="text-4xl lg:text-5xl font-bold pb-3 capitalize font-['PT_Serif',_serif]">About <span class="text-[#79a000]">Greeny</span></h1>
+                        <p class="text-base mb-5 font-medium">Bring life to your home and garden with beautifully crafted plant accessories that may enhance your green space effortlessly.</p>
+
+                        <p class="text-base mb-5 font-medium">Outdoor grow lights and premium plant stands may provide the optimal environment for your plants to thrive. Discover ways to nurture your greenery with The Baked Express.</p>
+
+                    </div>
+                    
+                    <div>
+                        <ul class="flex gap-8">
+                            <li class="bg-gray-100 px-8 py-8 rounded-md"><img src="images/icon-i1.png" class="mb-3"><p class="pt-3 font-semibold text-center">Free shipping</p></li>
+                            <li class="bg-gray-100 px-8 py-8 rounded-md"><img src="images/icon-i2.png" class="mb-3"><p class="pt-3 font-semibold text-center">Best Price</p></li>
+                            <li class="bg-gray-100 px-8 py-8 rounded-md"><img src="images/icon-i3.png" class="mb-3"><p class="pt-3 font-semibold text-center">Safe payment</p></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm">Shop Now <i class="fa fa-arrow-circle-right pl-3"></i></a>
+                </div>
+                <img class="lg:mx-0 mx-auto h-full rounded-3xl object-cover w-full" src="images/why-choose-v1-img1.DpmFV4Wf.jpg" alt="about Us image" />
+            </div>
+        </div>
+    </section>
+                                            
+
+    <section id="py-8 w-full">
+		<div class="px-8 bg-gray-100 py-8">
+			<div class="flex">
+				<div class="w-3/5">
+					<div class="img-border relative">
+						<img src="images/1.jpg" class="w-96" alt="">
+					</div>
+				</div>
+				<div class="w-4/5 pl-8">
+					<h2 class="font-['Roboto_Slab',_serif] font-normal text-3xl uppercase mb-2 mt-2"><b>landscaping</b> design <br>and construction</h2>
+					<p class="text-sm leading-6 font-medium pt-3 pb-3 text-gray-500">Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec odio ipsum.</p>
+                    <div class="grid grid-cols-2 mt-3 flex-col ">
+					<ul>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Lawn Renovation</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Landscape Lighting</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Flowerscaping</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Natural Stone Walks</li>
+					</ul>
+					<ul>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Lawn Maintenance</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Seasonal Clean-ups</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Snow Plowing &amp; Salting</li>
+						<li class="text-[#79a000] font-['PT_Serif',_serif] italic mb-3 text-lg"><i class="fa fa-angle-right text-lg pr-3"></i> Tree &amp; Shrub Care</li>
+					</ul>
+                    <a href="#" class="bg-[#14532d] text-white text-1xl font-medium py-3 rounded-none shadow hover:bg-[#000000] text-center mt-5 rounded-sm">Shop Now <i class="fa fa-arrow-circle-right pl-3"></i></a>
+                </div>
+				</div>
+				<div class="w-4/5">
+					<h3 class="font-['Roboto_Slab',_serif] text-lg font-bold text-xl uppercase mb-2 ">lawn maintenance</h3>
+					<p class="mb-4 text-gray-500">Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur. </p>
+					<img src="images/lawn-maintain.png" alt="" class="h-[138px]">
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="py-8 w-full" id="welcome-to-gardener">
+		<div class="px-8 py-8">
+			<div class="section-title2 mb-8">
+            	<p class="font-['PT_Serif',_serif] italic font-medium capitalize text-gray-500 text-lg ">We offier differnt services</p>
+				<h1 class="font-bold text-2xl text-dark font-['Roboto_Slab',_serif] uppercase mr-2 relative"><span class="pr-2">our awesome services</span></h1>
+			</div>
+			<div class="grid grid-cols-3 gap-4">
+            	<!--Start single service icon-->
+				<div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+                <!--Start single service icon-->
+				<div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+                <!--Start single service icon-->
+				<div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+                <!--Start single service icon-->
+                <div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+                <!--Start single service icon-->
+				<div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+                <!--Start single service icon-->
+				<div class="mt-5">
+                	<div class="flex items-center border relative">
+                    	<div class="bg-gray-100 px-8 py-8 min-h-32 relative"></div>
+                        <div class="bg-[#79a000] size-14 rounded-full absolute left-6">
+                        	<i class="flaticon-rural18 text-center text-white p-6 leading-[3.5]">1</i>
+                        </div>
+                        <div class="w-80 ml-8">
+                        	<h4 class="font-['Roboto_Slab',_serif] uppercase font-medium text-dark">lawn Renovation</h4>
+                            <p class="text-gray-500 pt-3">Duis aute irure dolor in reprehend erit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End single service icon-->
+			</div>
+		</div>
+	</section>
+
+    <section class="py-8 w-full ">
+		<div class="py-8">
+			<div class="grid grid-cols-2 mt-3 place-content-center h-80">
+				<div class="bg-[#313718] px-8 py-8">
+					<h2 class="text-[#e2ba4b] font-['Roboto_Slab',_serif] text-2xl uppercase font-medium">Welcome to gardener press</h2>
+					<p class="text-white italic font-['Open_Sans',_sans-serif] mt-3 text-lg">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliq uam quae rat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+					<h3 class="pt-5 pb-5 text-white text-2xl font-medium">We are available for 24/7 for Moving Services</h3>
+					<div class="grid grid-cols-2 mt-3 place-content-center">
+						<ul>
+							<li class="text-[#e2ba4b] uppercase font-bold font-['Open_Sans',_sans-serif]"><i class="fa-solid fa-hand-point-right pr-3 mb-5"></i>Lawn Renovation</li>
+							<li class="text-[#e2ba4b] uppercase font-bold font-['Open_Sans',_sans-serif]"><i class="fa-solid fa-hand-point-right pr-3 mb-5"></i>Tree &amp; Shrub Care</li>
+						</ul>
+						<ul>
+							<li class="text-[#e2ba4b] uppercase font-bold font-['Open_Sans',_sans-serif]"><i class="fa-solid fa-hand-point-right pr-3 mb-5"></i>COMPLETE development</li>
+							<li class="text-[#e2ba4b] uppercase font-bold font-['Open_Sans',_sans-serif]"><i class="fa-solid fa-hand-point-right pr-3 mb-5"></i>Pets control in your lawn</li>
+						</ul>
+					</div>
+				</div>
+				<div class="overflow-hidden">
+					<div class="img-holder hvr-rectangle-out relative">
+						<img src="images/01.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <section class="py-8 w-full" id="latest-project-gardener">
+		<div class="px-8 py-8">
+			<div class="section-title2 mb-8">
+                <p class="font-['PT_Serif',_serif] italic font-medium capitalize text-gray-500 text-lg">Worked We Have Done</p>
+				<h1 class="font-bold text-2xl text-dark font-['Roboto_Slab',_serif] uppercase mr-2 relative"><span class="pr-2">Our recent projects</span></h1>
+			</div>
+			<div class="grid grid-cols-3 mt-3 place-content-center gap-4">
+				<div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/011.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/011.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="img/latest-project-gardener/1.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/012.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/012.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="images/03.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/3.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/3.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="images/03.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/4.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/4.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="img/latest-project-gardener/1.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/5.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/5.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="img/latest-project-gardener/1.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+                <div class="w-full">
+					<div class="single-latest-project-gardener">
+						<img src="images/6.jpg" alt="">
+						<div class="overlay">
+							<div class="box-holder">
+								<div class="content-box">
+									<h3><span>Landscaping</span> Project</h3>
+									<p>Duis aute irure dolor in reprehenderit in voluptate ve</p>
+									<ul>
+										<li><a class="link-view" href="#"><i class="fa fa-link"></i></a></li>
+										<li><a href="images/6.jpg" class="fancybox" data-fancybox-group="home-gallery" title="Gardener Gallery"><i class="fa fa-camera"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+						<div class="modal-content">
+							<div class="item-name">Landscaping Project</div>
+							<img src="img/latest-project-gardener/1.jpg" alt="" class="item-image">
+							<div class="item-text">
+								<p>sed quia non numquam eius modi tempora incidunt <br> ut labore et dolore magnam aliquam quaerat volup- ptatem. voluptatem. </p>
+								<ul>
+									<li><i class="fa fa-long-arrow-right"></i> Good Furniture in room</li>
+									<li><i class="fa fa-long-arrow-right"></i> Granite Stone on floor</li>
+									<li><i class="fa fa-long-arrow-right"></i> toilet is attached</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="video-section-gardener" class="bg-[url(/images/bg.jpg)] bg-cover bg-center">
+		<div class="py-8 w-full px-8">
+			<div class="grid grid-cols-2">
+			<div class="mt-5">
+				<a href="#" data-toggle="modal" data-target=".video-popup-modal">
+					<img src="images/video.jpg" alt="">
+				</a>
+			</div>
+			<div class="px-5 place-content-center">
+				<h2 class="font-bold text-[#419c04] text-3xl capitalize font-['Roboto_Slab',_serif] pb-5">Consequuntur magni dolores eos qui ratione</h2>
+				<p class="text-gray-500 pb-8 font-['Open_Sans',_sans-serif] text-sm/6 italic font-medium">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con sequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quis quam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.  Neque porro quis quam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                <a href="#" class="bg-[#14532d] text-white text-1xl font-medium px-7 py-3 rounded-none shadow hover:bg-[#000000] rounded-sm">Shop Now <i class="fa fa-arrow-circle-right pl-3"></i></a>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="blog-gardener">
+		<div class="py-8 w-full px-8">
+			<div class="section-title2 mb-8">
+                <p class="font-['PT_Serif',_serif] italic font-medium capitalize text-gray-500 text-lg">Tips & Tricks</p>
+				<h1 class="font-bold text-2xl text-dark font-['Roboto_Slab',_serif] uppercase mr-2 relative"><span class="pr-2">OUr Blogs</span></h1>
+			</div>
+			<div class="grid grid-cols-3 gap-6">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 single-blog-post">
+					<div class="img-holder">
+						<img src="images/blog-1.jpg" alt="">
+						<div class="overlay">
+							<div class="inner-holder">
+								<ul class="button">
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="date">
+							<b>05</b> <br> Aug
+						</div>
+					</div>
+					<ul>
+						<li><span><b>By: </b> Anjori Meyami</span></li>
+						<li><a href="#">Read More</a></li>
+					</ul>
+					<a href="#"><h2>Heading of Blog</h2></a>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolorem que laudantium totam rem aperiam</p>					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 single-blog-post">
+					<div class="img-holder">
+						<img src="images/blog-2.jpg" alt="">
+						<div class="overlay">
+							<div class="inner-holder">
+								<ul class="button">
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="date">
+							<b>05</b> <br> Aug
+						</div>
+					</div>
+					<ul>
+						<li><span><b>By: </b> Anjori Meyami</span></li>
+						<li><a href="#">Read More</a></li>
+					</ul>
+					<a href="#"><h2>Heading of Blog</h2></a>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolorem que laudantium totam rem aperiam</p>					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 single-blog-post">
+					<div class="img-holder">
+						<img src="images/blog-3.jpg" alt="">
+						<div class="overlay">
+							<div class="inner-holder">
+								<ul class="button">
+									<li><a href="#"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="date">
+							<b>05</b> <br> Aug
+						</div>
+					</div>
+					<ul>
+						<li><span><b>By: </b> Anjori Meyami</span></li>
+						<li><a href="#">Read More</a></li>
+					</ul>
+					<a href="#"><h2>Heading of Blog</h2></a>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolorem que laudantium totam rem aperiam</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="great-gardener-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 float-right has-skew w-2/3">
+					<h2>Gardner need &amp; Landscaping</h2>
+					<p>If you have an gardner need, simply call our <br>24 hour emergecny number</p>
+					<p class="has-btn"><b>1800 856 7489</b><span>or</span>
+                    </p>
+                    <a class="contact-button" href="">
+                    	<div class="contact-us-button">contact us</div>
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer-bg">
+		<!-- footer -->
+		<footer class="gardener">
+			<div class="py-8 px-8">
+				<div class="grid grid-cols-4 gap-4">
+					<!-- .widget -->
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+						<h3 class="text-white italic text-lg font-semibold mb-5">About Us</h3>
+						<p>Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim.</p>
+					
+						
+					</div> <!-- /.widget -->
+					<!-- .widget -->
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+						<h3 class="text-white italic text-lg font-semibold mb-5">Our Services</h3>
+						<ul class="quick-links">
+							<li><a href="#">Lawn Renovation</a></li>
+							<li><a href="#">Flowerscaping</a></li>
+							<li><a href="#">Natural Stone Walks</a></li>
+							<li><a href="#">Tree &amp; Shrub Care</a></li>
+							<li><a href="#">Seasonal Clean-ups</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+					<!-- .widget -->
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 widget">
+						<h3 class="text-white italic text-lg font-semibold mb-5">Get in Touch</h3>
+						<ul class="contact-info">
+							<li>
+								<div class="icon-box">
+									<i class="fa-solid fa-location-dot text-[#98BC24]"></i>
+								</div>
+								<div class="content">
+									<p>Lorance Road 542B, Tailstoi Town<br>5248 MT, Wordwide Country</p>
+								</div>
+							</li>
+							<li>
+								<div class="icon-box">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="content phone">
+									<p>01865 524 8503</p>
+								</div>
+							</li>
+							<li>
+								<div class="icon-box">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="content">
+									<p>contact@gardencare.com</p>
+								</div>
+							</li>
+						</ul>
+					</div> <!-- /.widget -->
+					<!-- .widget -->
+					<div class="col-lg-3 col-md-6 hidden-md col-sm-6 col-xs-12 widget">
+						<img class="positioned wow slideInRight" src="images/footer-man.png" alt="" style="visibility: visible; animation-name: slideInRight;">
+					</div> <!-- /.widget -->
+				</div>
+			</div>
+		</footer> <!-- /footer -->
+		
+		<!-- #bottom-bar -->
+		<section id="bottom-bar" class="gardener">
+			<div class="px-8">
+				<div class="grid grid-cols-2 gap-4 place-content-center">
+					<!-- .copyright -->
+					<div class="py-5">
+						<ul class="social">
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+						</ul>
+						<p>Created by: DesignArc</p>
+					</div> <!-- /.copyright -->
+					<!-- .credit -->
+					<div class="credit text-right py-5">
+						<p>Copyright © Garden Care 2015. All rights reserved. </p>
+					</div> <!-- /.credit -->
+				</div>
+			</div> 
+		</section><!-- /#bottom-bar -->
+    </section>
+</body>
+
+</html>
